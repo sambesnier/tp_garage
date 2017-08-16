@@ -36,7 +36,7 @@ public class Database {
 	private void connexion() {
 		String url = "jdbc:mysql://localhost:3306/tp_garage";
 		String utilisateur = "root";
-		String motDePasse = "";
+		String motDePasse = "1234";
 		try {
 		    set_connexion((Connection) DriverManager.getConnection( url, utilisateur, motDePasse ));
 		    /* Ici, nous placerons nos requêtes vers la BDD */
