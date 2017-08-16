@@ -1,5 +1,6 @@
 package views;
 
+import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Dialog;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
@@ -33,6 +34,7 @@ public class ViewFacture extends Dialog {
 	private Label codePostal;
 	private Label lblVille;
 	private Label ville;
+	private Button btnExportPdf;
 
 	/**
 	 * Create the dialog.
@@ -136,6 +138,10 @@ public class ViewFacture extends Dialog {
 		
 		date = new Label(shell, SWT.NONE);
 		date.setBounds(256, 356, 182, 15);
+		
+		btnExportPdf = new Button(shell, SWT.NONE);
+		btnExportPdf.setBounds(256, 384, 182, 50);
+		btnExportPdf.setText("Enregistrer PDF");
 		
 		Label lblMontant = new Label(shell, SWT.NONE);
 		lblMontant.setFont(SWTResourceManager.getFont("Segoe UI", 9, SWT.BOLD));
